@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		848D52D21C7C01EB00DD6732 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D52D11C7C01EB00DD6732 /* main.m */; };
+		848D52D51C7C01EB00DD6732 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D52D41C7C01EB00DD6732 /* AppDelegate.m */; };
+		848D52DB1C7C01EB00DD6732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848D52D91C7C01EB00DD6732 /* Main.storyboard */; };
+		848D52DD1C7C01EB00DD6732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848D52DC1C7C01EB00DD6732 /* Assets.xcassets */; };
+		848D52E01C7C01EB00DD6732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848D52DE1C7C01EB00DD6732 /* LaunchScreen.storyboard */; };
+		848D530F1C7C028700DD6732 /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D530E1C7C028700DD6732 /* RootTableViewController.m */; };
+		848D53121C7C04ED00DD6732 /* MYNSLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D53111C7C04ED00DD6732 /* MYNSLockViewController.m */; };
+		848D53981C7EBFD100DD6732 /* MYsynchronizedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D53971C7EBFD100DD6732 /* MYsynchronizedViewController.m */; };
+		848D539B1C7EC22C00DD6732 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D539A1C7EC22C00DD6732 /* BaseViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		848D52CD1C7C01EB00DD6732 /* ThreadLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		848D52D11C7C01EB00DD6732 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		848D52D31C7C01EB00DD6732 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		848D52D41C7C01EB00DD6732 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		848D52DA1C7C01EB00DD6732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		848D52DC1C7C01EB00DD6732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		848D52DF1C7C01EB00DD6732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		848D52E11C7C01EB00DD6732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848D530D1C7C028700DD6732 /* RootTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableViewController.h; sourceTree = "<group>"; };
+		848D530E1C7C028700DD6732 /* RootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewController.m; sourceTree = "<group>"; };
+		848D53101C7C04ED00DD6732 /* MYNSLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNSLockViewController.h; sourceTree = "<group>"; };
+		848D53111C7C04ED00DD6732 /* MYNSLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNSLockViewController.m; sourceTree = "<group>"; };
+		848D53961C7EBFD100DD6732 /* MYsynchronizedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYsynchronizedViewController.h; sourceTree = "<group>"; };
+		848D53971C7EBFD100DD6732 /* MYsynchronizedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYsynchronizedViewController.m; sourceTree = "<group>"; };
+		848D53991C7EC22C00DD6732 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		848D539A1C7EC22C00DD6732 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		848D52CA1C7C01EB00DD6732 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		848D52C41C7C01EB00DD6732 = {
+			isa = PBXGroup;
+			children = (
+				848D52CF1C7C01EB00DD6732 /* ThreadLock */,
+				848D52CE1C7C01EB00DD6732 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		848D52CE1C7C01EB00DD6732 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				848D52CD1C7C01EB00DD6732 /* ThreadLock.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		848D52CF1C7C01EB00DD6732 /* ThreadLock */ = {
+			isa = PBXGroup;
+			children = (
+				848D52D31C7C01EB00DD6732 /* AppDelegate.h */,
+				848D52D41C7C01EB00DD6732 /* AppDelegate.m */,
+				848D52D91C7C01EB00DD6732 /* Main.storyboard */,
+				848D52DC1C7C01EB00DD6732 /* Assets.xcassets */,
+				848D52DE1C7C01EB00DD6732 /* LaunchScreen.storyboard */,
+				848D52E11C7C01EB00DD6732 /* Info.plist */,
+				848D52D01C7C01EB00DD6732 /* Supporting Files */,
+				848D530D1C7C028700DD6732 /* RootTableViewController.h */,
+				848D530E1C7C028700DD6732 /* RootTableViewController.m */,
+				848D53101C7C04ED00DD6732 /* MYNSLockViewController.h */,
+				848D53111C7C04ED00DD6732 /* MYNSLockViewController.m */,
+				848D53961C7EBFD100DD6732 /* MYsynchronizedViewController.h */,
+				848D53971C7EBFD100DD6732 /* MYsynchronizedViewController.m */,
+				848D53991C7EC22C00DD6732 /* BaseViewController.h */,
+				848D539A1C7EC22C00DD6732 /* BaseViewController.m */,
+			);
+			path = ThreadLock;
+			sourceTree = "<group>";
+		};
+		848D52D01C7C01EB00DD6732 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				848D52D11C7C01EB00DD6732 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		848D52CC1C7C01EB00DD6732 /* ThreadLock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848D52E41C7C01EB00DD6732 /* Build configuration list for PBXNativeTarget "ThreadLock" */;
+			buildPhases = (
+				848D52C91C7C01EB00DD6732 /* Sources */,
+				848D52CA1C7C01EB00DD6732 /* Frameworks */,
+				848D52CB1C7C01EB00DD6732 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThreadLock;
+			productName = ThreadLock;
+			productReference = 848D52CD1C7C01EB00DD6732 /* ThreadLock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		848D52C51C7C01EB00DD6732 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Yasin;
+				TargetAttributes = {
+					848D52CC1C7C01EB00DD6732 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 848D52C81C7C01EB00DD6732 /* Build configuration list for PBXProject "ThreadLock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 848D52C41C7C01EB00DD6732;
+			productRefGroup = 848D52CE1C7C01EB00DD6732 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				848D52CC1C7C01EB00DD6732 /* ThreadLock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		848D52CB1C7C01EB00DD6732 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848D52E01C7C01EB00DD6732 /* LaunchScreen.storyboard in Resources */,
+				848D52DD1C7C01EB00DD6732 /* Assets.xcassets in Resources */,
+				848D52DB1C7C01EB00DD6732 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		848D52C91C7C01EB00DD6732 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848D52D51C7C01EB00DD6732 /* AppDelegate.m in Sources */,
+				848D539B1C7EC22C00DD6732 /* BaseViewController.m in Sources */,
+				848D52D21C7C01EB00DD6732 /* main.m in Sources */,
+				848D53121C7C04ED00DD6732 /* MYNSLockViewController.m in Sources */,
+				848D53981C7EBFD100DD6732 /* MYsynchronizedViewController.m in Sources */,
+				848D530F1C7C028700DD6732 /* RootTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		848D52D91C7C01EB00DD6732 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848D52DA1C7C01EB00DD6732 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		848D52DE1C7C01EB00DD6732 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848D52DF1C7C01EB00DD6732 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		848D52E21C7C01EB00DD6732 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		848D52E31C7C01EB00DD6732 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		848D52E51C7C01EB00DD6732 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ThreadLock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Yasin.ThreadLock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		848D52E61C7C01EB00DD6732 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ThreadLock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Yasin.ThreadLock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		848D52C81C7C01EB00DD6732 /* Build configuration list for PBXProject "ThreadLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848D52E21C7C01EB00DD6732 /* Debug */,
+				848D52E31C7C01EB00DD6732 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848D52E41C7C01EB00DD6732 /* Build configuration list for PBXNativeTarget "ThreadLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848D52E51C7C01EB00DD6732 /* Debug */,
+				848D52E61C7C01EB00DD6732 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 848D52C51C7C01EB00DD6732 /* Project object */;
+}
