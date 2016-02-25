@@ -16,6 +16,8 @@
 		848D53121C7C04ED00DD6732 /* MYNSLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D53111C7C04ED00DD6732 /* MYNSLockViewController.m */; };
 		848D53981C7EBFD100DD6732 /* MYsynchronizedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D53971C7EBFD100DD6732 /* MYsynchronizedViewController.m */; };
 		848D539B1C7EC22C00DD6732 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D539A1C7EC22C00DD6732 /* BaseViewController.m */; };
+		848D539E1C7ECCA000DD6732 /* MYDispatchSemaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D539D1C7ECCA000DD6732 /* MYDispatchSemaphoreViewController.m */; };
+		848D53A11C7EE53D00DD6732 /* MYatomicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D53A01C7EE53D00DD6732 /* MYatomicViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,10 @@
 		848D53971C7EBFD100DD6732 /* MYsynchronizedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYsynchronizedViewController.m; sourceTree = "<group>"; };
 		848D53991C7EC22C00DD6732 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		848D539A1C7EC22C00DD6732 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		848D539C1C7ECCA000DD6732 /* MYDispatchSemaphoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYDispatchSemaphoreViewController.h; sourceTree = "<group>"; };
+		848D539D1C7ECCA000DD6732 /* MYDispatchSemaphoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYDispatchSemaphoreViewController.m; sourceTree = "<group>"; };
+		848D539F1C7EE53D00DD6732 /* MYatomicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYatomicViewController.h; sourceTree = "<group>"; };
+		848D53A01C7EE53D00DD6732 /* MYatomicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYatomicViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,19 +75,23 @@
 			children = (
 				848D52D31C7C01EB00DD6732 /* AppDelegate.h */,
 				848D52D41C7C01EB00DD6732 /* AppDelegate.m */,
+				848D530D1C7C028700DD6732 /* RootTableViewController.h */,
+				848D530E1C7C028700DD6732 /* RootTableViewController.m */,
+				848D53991C7EC22C00DD6732 /* BaseViewController.h */,
+				848D539A1C7EC22C00DD6732 /* BaseViewController.m */,
 				848D52D91C7C01EB00DD6732 /* Main.storyboard */,
 				848D52DC1C7C01EB00DD6732 /* Assets.xcassets */,
 				848D52DE1C7C01EB00DD6732 /* LaunchScreen.storyboard */,
 				848D52E11C7C01EB00DD6732 /* Info.plist */,
 				848D52D01C7C01EB00DD6732 /* Supporting Files */,
-				848D530D1C7C028700DD6732 /* RootTableViewController.h */,
-				848D530E1C7C028700DD6732 /* RootTableViewController.m */,
+				848D539F1C7EE53D00DD6732 /* MYatomicViewController.h */,
+				848D53A01C7EE53D00DD6732 /* MYatomicViewController.m */,
 				848D53101C7C04ED00DD6732 /* MYNSLockViewController.h */,
 				848D53111C7C04ED00DD6732 /* MYNSLockViewController.m */,
 				848D53961C7EBFD100DD6732 /* MYsynchronizedViewController.h */,
 				848D53971C7EBFD100DD6732 /* MYsynchronizedViewController.m */,
-				848D53991C7EC22C00DD6732 /* BaseViewController.h */,
-				848D539A1C7EC22C00DD6732 /* BaseViewController.m */,
+				848D539C1C7ECCA000DD6732 /* MYDispatchSemaphoreViewController.h */,
+				848D539D1C7ECCA000DD6732 /* MYDispatchSemaphoreViewController.m */,
 			);
 			path = ThreadLock;
 			sourceTree = "<group>";
@@ -165,9 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				848D52D51C7C01EB00DD6732 /* AppDelegate.m in Sources */,
+				848D539E1C7ECCA000DD6732 /* MYDispatchSemaphoreViewController.m in Sources */,
 				848D539B1C7EC22C00DD6732 /* BaseViewController.m in Sources */,
 				848D52D21C7C01EB00DD6732 /* main.m in Sources */,
 				848D53121C7C04ED00DD6732 /* MYNSLockViewController.m in Sources */,
+				848D53A11C7EE53D00DD6732 /* MYatomicViewController.m in Sources */,
 				848D53981C7EBFD100DD6732 /* MYsynchronizedViewController.m in Sources */,
 				848D530F1C7C028700DD6732 /* RootTableViewController.m in Sources */,
 			);

@@ -10,7 +10,7 @@
 
 @interface BaseViewController ()
 
-@property (nonatomic, strong) dispatch_queue_t synchronizationQueue;
+
 @end
 
 @implementation BaseViewController
@@ -18,7 +18,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    self.title = NSStringFromClass([self class]);
+    NSString *classStr = NSStringFromClass([self class]);
+    NSString *title = [[[classStr componentsSeparatedByString:@"ViewController"] objectAtIndex:0] substringFromIndex:2];
+    self.title = title;
     
     self.synchronizationQueue = dispatch_queue_create([@"com.yasin.synchronization" cStringUsingEncoding:NSASCIIStringEncoding], DISPATCH_QUEUE_CONCURRENT);
     
@@ -48,14 +50,15 @@
     dispatch_group_t dispatchGroup = dispatch_group_create();
     __block double then, now;
     then = CFAbsoluteTimeGetCurrent();
-    for (int i=0; i<count; i++) {
+    for (int i=0; i<count+100; i++) {
+        //100来测试锁有没有正确的执行
         dispatch_group_async(dispatchGroup, self.synchronizationQueue, ^(){
             [self getIamgeName:imageNames];
         });
     }
     dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), ^(){
         now = CFAbsoluteTimeGetCurrent();
-        printf("pthread_mutex: %f sec\n", now-then);
+        printf("thread_lock: %f sec\n", now-then);
     });
     
 }

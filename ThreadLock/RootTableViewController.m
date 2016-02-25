@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    dateArray = @[@"NSLock",@"synchronized"];
+    dateArray = @[@"atomic",@"NSLock",@"synchronized",@"DispatchSemaphore"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
