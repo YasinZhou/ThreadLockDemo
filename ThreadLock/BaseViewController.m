@@ -30,7 +30,7 @@
     [self.view addSubview:button];
 }
 
-- (void)getIamgeName:(int)index{
+- (void)getIamgeName:(NSMutableArray *)imageNames{
     NSString *imageName;
     if (imageNames.count>0) {
         imageName = [imageNames lastObject];
@@ -40,7 +40,7 @@
 
 #pragma mark - 多线程取出图片后删除
 - (void)getImageNameWithMultiThread{
-    imageNames = [NSMutableArray new];
+    NSMutableArray *imageNames = [NSMutableArray new];
     int count = 1024*10;
     for (int i=0; i<count; i++) {
         [imageNames addObject:[NSString stringWithFormat:@"%d",i]];
@@ -50,7 +50,7 @@
     then = CFAbsoluteTimeGetCurrent();
     for (int i=0; i<count; i++) {
         dispatch_group_async(dispatchGroup, self.synchronizationQueue, ^(){
-            [self getIamgeName:i];
+            [self getIamgeName:imageNames];
         });
     }
     dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), ^(){

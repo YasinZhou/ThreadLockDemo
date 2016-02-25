@@ -21,14 +21,16 @@
     // Do any additional setup after loading the view.
     lock = [[NSLock alloc]init];
 }
-- (void)getIamgeName:(int)index{
+- (void)getIamgeName:(NSMutableArray *)imageNames{
     NSString *imageName;
-    [lock lock];
-    if (imageNames.count>0) {
-        imageName = [imageNames lastObject];
-        [imageNames removeObject:imageName];
+    if ([lock tryLock]) {
+        if (imageNames.count>0) {
+            imageName = [imageNames lastObject];
+            [imageNames removeObject:imageName];
+        }
+        [lock unlock];
     }
-    [lock unlock];
+    
 }
 
 @end

@@ -18,7 +18,7 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)getIamgeName:(int)index{
+- (void)getIamgeName:(NSMutableArray *)imageNames{
     NSString *imageName;
     @synchronized(self) {
         if (imageNames.count>0) {
