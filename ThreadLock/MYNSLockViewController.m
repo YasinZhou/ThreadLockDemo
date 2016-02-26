@@ -23,14 +23,12 @@
 }
 - (void)getIamgeName:(NSMutableArray *)imageNames{
     NSString *imageName;
-    if ([lock tryLock]) {
-        if (imageNames.count>0) {
-            imageName = [imageNames lastObject];
-            [imageNames removeObject:imageName];
-        }
-        [lock unlock];
+    [lock lock];
+    if (imageNames.count>0) {
+        imageName = [imageNames lastObject];
+        [imageNames removeObject:imageName];
     }
-    
+    [lock unlock];
 }
 
 @end
