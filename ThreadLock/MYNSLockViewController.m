@@ -25,8 +25,8 @@
     NSString *imageName;
     [lock lock];
     if (imageNames.count>0) {
-        imageName = [imageNames lastObject];
-        [imageNames removeObject:imageName];
+        imageName = [imageNames firstObject];
+        [imageNames removeObjectAtIndex:0];
     }
     [lock unlock];
 }

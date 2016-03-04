@@ -20,6 +20,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     semaphore = dispatch_semaphore_create(1);
+    /**
+     *  创建一个信号量为1的信号
+     *
+     */
 }
 
 - (void)getIamgeName:(NSMutableArray *)imageNames{
@@ -27,14 +31,16 @@
     /**
      *  semaphore：等待信号
      DISPATCH_TIME_FOREVER：等待时间
+     wait之后信号量-1，为0
      */
     dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
-    @synchronized(self) {
-        if (imageNames.count>0) {
-            imageName = [imageNames lastObject];
-            [imageNames removeObject:imageName];
-        }
+    if (imageNames.count>0) {
+        imageName = [imageNames firstObject];
+        [imageNames removeObjectAtIndex:0];
     }
+    /**
+     *  发送一个信号通知，这时候信号量+1，为1
+     */
     dispatch_semaphore_signal(semaphore);
 }
 

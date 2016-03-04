@@ -14,6 +14,9 @@
 @end
 
 @implementation BaseViewController
+-(void)dealloc{
+    NSLog(@"%@释放了",NSStringFromClass([self class]));
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -25,18 +28,21 @@
     self.synchronizationQueue = dispatch_queue_create([@"com.yasin.synchronization" cStringUsingEncoding:NSASCIIStringEncoding], DISPATCH_QUEUE_CONCURRENT);
     
     UIButton *button=[UIButton buttonWithType:UIButtonTypeRoundedRect];
-    button.frame=CGRectMake(50, 500, 220, 25);
+    button.frame=CGRectMake(50, 400, 220, 25);
     [button setTitle:@"取出图片" forState:UIControlStateNormal];
-    //添加方法
     [button addTarget:self action:@selector(getImageNameWithMultiThread) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
 }
 
-- (void)getIamgeName:(NSMutableArray *)imageNames{
+- (void)getIamgeName:(NSMutableArray *)imageNames{//假如每个进来的都是一个线程
+    //1.imageNames是线程外的变量，这个时候就需要考虑线程安全
+    /*2.NSMutableArray *array = [[NSMutableArray alloc]initWithArray:imageNames];
+    这里如果新生成一个array，下面也把imageNames换成array就不需要考虑线程安全，但是这样array.count判断永远大于0，也就是永远等于imageNames.count-1
+     */
     NSString *imageName;
     if (imageNames.count>0) {
-        imageName = [imageNames lastObject];
-        [imageNames removeObject:imageName];
+        imageName = [imageNames firstObject];
+        [imageNames removeObjectAtIndex:0];
     }
 }
 
@@ -58,7 +64,7 @@
     }
     dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), ^(){
         now = CFAbsoluteTimeGetCurrent();
-        printf("thread_lock: %f sec\n", now-then);
+        printf("thread_lock: %f sec\nimageNames count: %ld\n", now-then,imageNames.count);
     });
     
 }

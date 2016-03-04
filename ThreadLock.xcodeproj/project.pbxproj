@@ -18,6 +18,13 @@
 		848D539B1C7EC22C00DD6732 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D539A1C7EC22C00DD6732 /* BaseViewController.m */; };
 		848D539E1C7ECCA000DD6732 /* MYDispatchSemaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D539D1C7ECCA000DD6732 /* MYDispatchSemaphoreViewController.m */; };
 		848D53A11C7EE53D00DD6732 /* MYatomicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D53A01C7EE53D00DD6732 /* MYatomicViewController.m */; };
+		84F224C81C86B3DB00A8561A /* MYNSConditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F224C71C86B3DB00A8561A /* MYNSConditionViewController.m */; };
+		84F224CB1C86F49400A8561A /* MYNSConditionLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F224CA1C86F49400A8561A /* MYNSConditionLockViewController.m */; };
+		84F224CE1C86FB7F00A8561A /* MYNSRecursiveLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F224CD1C86FB7F00A8561A /* MYNSRecursiveLockViewController.m */; };
+		84F224D11C87DEEB00A8561A /* MYPOSIXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F224D01C87DEEB00A8561A /* MYPOSIXViewController.m */; };
+		84F224D41C88352C00A8561A /* MYOSSpinLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F224D31C88352C00A8561A /* MYOSSpinLockViewController.m */; };
+		84F224D71C883F8300A8561A /* MYdispatch_barrier_syncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F224D61C883F8300A8561A /* MYdispatch_barrier_syncViewController.m */; };
+		84F224DE1C893ED400A8561A /* MYdispatch_barrier_asyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F224DD1C893ED400A8561A /* MYdispatch_barrier_asyncViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +48,20 @@
 		848D539D1C7ECCA000DD6732 /* MYDispatchSemaphoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYDispatchSemaphoreViewController.m; sourceTree = "<group>"; };
 		848D539F1C7EE53D00DD6732 /* MYatomicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYatomicViewController.h; sourceTree = "<group>"; };
 		848D53A01C7EE53D00DD6732 /* MYatomicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYatomicViewController.m; sourceTree = "<group>"; };
+		84F224C61C86B3DB00A8561A /* MYNSConditionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNSConditionViewController.h; sourceTree = "<group>"; };
+		84F224C71C86B3DB00A8561A /* MYNSConditionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNSConditionViewController.m; sourceTree = "<group>"; };
+		84F224C91C86F49400A8561A /* MYNSConditionLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNSConditionLockViewController.h; sourceTree = "<group>"; };
+		84F224CA1C86F49400A8561A /* MYNSConditionLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNSConditionLockViewController.m; sourceTree = "<group>"; };
+		84F224CC1C86FB7F00A8561A /* MYNSRecursiveLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYNSRecursiveLockViewController.h; sourceTree = "<group>"; };
+		84F224CD1C86FB7F00A8561A /* MYNSRecursiveLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYNSRecursiveLockViewController.m; sourceTree = "<group>"; };
+		84F224CF1C87DEEB00A8561A /* MYPOSIXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYPOSIXViewController.h; sourceTree = "<group>"; };
+		84F224D01C87DEEB00A8561A /* MYPOSIXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYPOSIXViewController.m; sourceTree = "<group>"; };
+		84F224D21C88352C00A8561A /* MYOSSpinLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYOSSpinLockViewController.h; sourceTree = "<group>"; };
+		84F224D31C88352C00A8561A /* MYOSSpinLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYOSSpinLockViewController.m; sourceTree = "<group>"; };
+		84F224D51C883F8300A8561A /* MYdispatch_barrier_syncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYdispatch_barrier_syncViewController.h; sourceTree = "<group>"; };
+		84F224D61C883F8300A8561A /* MYdispatch_barrier_syncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYdispatch_barrier_syncViewController.m; sourceTree = "<group>"; };
+		84F224DC1C893ED400A8561A /* MYdispatch_barrier_asyncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYdispatch_barrier_asyncViewController.h; sourceTree = "<group>"; };
+		84F224DD1C893ED400A8561A /* MYdispatch_barrier_asyncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYdispatch_barrier_asyncViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +113,20 @@
 				848D53971C7EBFD100DD6732 /* MYsynchronizedViewController.m */,
 				848D539C1C7ECCA000DD6732 /* MYDispatchSemaphoreViewController.h */,
 				848D539D1C7ECCA000DD6732 /* MYDispatchSemaphoreViewController.m */,
+				84F224C61C86B3DB00A8561A /* MYNSConditionViewController.h */,
+				84F224C71C86B3DB00A8561A /* MYNSConditionViewController.m */,
+				84F224C91C86F49400A8561A /* MYNSConditionLockViewController.h */,
+				84F224CA1C86F49400A8561A /* MYNSConditionLockViewController.m */,
+				84F224CC1C86FB7F00A8561A /* MYNSRecursiveLockViewController.h */,
+				84F224CD1C86FB7F00A8561A /* MYNSRecursiveLockViewController.m */,
+				84F224CF1C87DEEB00A8561A /* MYPOSIXViewController.h */,
+				84F224D01C87DEEB00A8561A /* MYPOSIXViewController.m */,
+				84F224D21C88352C00A8561A /* MYOSSpinLockViewController.h */,
+				84F224D31C88352C00A8561A /* MYOSSpinLockViewController.m */,
+				84F224DC1C893ED400A8561A /* MYdispatch_barrier_asyncViewController.h */,
+				84F224DD1C893ED400A8561A /* MYdispatch_barrier_asyncViewController.m */,
+				84F224D51C883F8300A8561A /* MYdispatch_barrier_syncViewController.h */,
+				84F224D61C883F8300A8561A /* MYdispatch_barrier_syncViewController.m */,
 			);
 			path = ThreadLock;
 			sourceTree = "<group>";
@@ -176,12 +211,19 @@
 			files = (
 				848D52D51C7C01EB00DD6732 /* AppDelegate.m in Sources */,
 				848D539E1C7ECCA000DD6732 /* MYDispatchSemaphoreViewController.m in Sources */,
+				84F224D41C88352C00A8561A /* MYOSSpinLockViewController.m in Sources */,
 				848D539B1C7EC22C00DD6732 /* BaseViewController.m in Sources */,
 				848D52D21C7C01EB00DD6732 /* main.m in Sources */,
 				848D53121C7C04ED00DD6732 /* MYNSLockViewController.m in Sources */,
+				84F224C81C86B3DB00A8561A /* MYNSConditionViewController.m in Sources */,
+				84F224CB1C86F49400A8561A /* MYNSConditionLockViewController.m in Sources */,
 				848D53A11C7EE53D00DD6732 /* MYatomicViewController.m in Sources */,
+				84F224DE1C893ED400A8561A /* MYdispatch_barrier_asyncViewController.m in Sources */,
 				848D53981C7EBFD100DD6732 /* MYsynchronizedViewController.m in Sources */,
 				848D530F1C7C028700DD6732 /* RootTableViewController.m in Sources */,
+				84F224D71C883F8300A8561A /* MYdispatch_barrier_syncViewController.m in Sources */,
+				84F224D11C87DEEB00A8561A /* MYPOSIXViewController.m in Sources */,
+				84F224CE1C86FB7F00A8561A /* MYNSRecursiveLockViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

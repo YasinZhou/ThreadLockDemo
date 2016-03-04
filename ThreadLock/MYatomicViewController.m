@@ -22,8 +22,8 @@
     NSString *imageName;
     if (self.imageNames.count>0) {
         //原子属性的数据并不是线程安全的，这里会出现内存问题
-        imageName = [self.imageNames lastObject];
-        [self.imageNames removeObject:imageName];
+        imageName = [self.imageNames firstObject];
+        [self.imageNames removeObjectAtIndex:0];
     }
 
 }

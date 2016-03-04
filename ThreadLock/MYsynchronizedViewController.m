@@ -22,8 +22,8 @@
     NSString *imageName;
     @synchronized(self) {
         if (imageNames.count>0) {
-            imageName = [imageNames lastObject];
-            [imageNames removeObject:imageName];
+            imageName = [imageNames firstObject];
+            [imageNames removeObjectAtIndex:0];
         }
     }
 }
