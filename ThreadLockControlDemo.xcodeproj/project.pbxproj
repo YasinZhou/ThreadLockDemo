@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		849DD4641C895CA800772BE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DD4631C895CA800772BE1 /* main.m */; };
+		849DD4671C895CA800772BE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DD4661C895CA800772BE1 /* AppDelegate.m */; };
+		849DD46D1C895CA800772BE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849DD46B1C895CA800772BE1 /* Main.storyboard */; };
+		849DD46F1C895CA800772BE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849DD46E1C895CA800772BE1 /* Assets.xcassets */; };
+		849DD4721C895CA800772BE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849DD4701C895CA800772BE1 /* LaunchScreen.storyboard */; };
+		849DD47D1C895CA800772BE1 /* ThreadLockControlDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DD47C1C895CA800772BE1 /* ThreadLockControlDemoTests.m */; };
+		849DD4881C895CA800772BE1 /* ThreadLockControlDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DD4871C895CA800772BE1 /* ThreadLockControlDemoUITests.m */; };
+		849DD4971C895CD400772BE1 /* BaseControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DD4961C895CD400772BE1 /* BaseControl.m */; };
+		849DD49A1C895EA800772BE1 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DD4991C895EA800772BE1 /* BaseViewController.m */; };
+		849DD49D1C895F1300772BE1 /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DD49C1C895F1300772BE1 /* RootTableViewController.m */; };
+		849DD4A01C895FD600772BE1 /* NSConditionLockControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DD49F1C895FD600772BE1 /* NSConditionLockControl.m */; };
+		849DD4A31C89657700772BE1 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DD4A21C89657700772BE1 /* TestViewController.m */; };
+		849DD4A71C89677400772BE1 /* atomicControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DD4A61C89677400772BE1 /* atomicControl.m */; };
+		849DD4AA1C8967C700772BE1 /* NSLockControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DD4A91C8967C700772BE1 /* NSLockControl.m */; };
+		849DD4AD1C89681400772BE1 /* synchronizedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DD4AC1C89681400772BE1 /* synchronizedControl.m */; };
+		849DD4B01C89685600772BE1 /* DispatchSemaphoreControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DD4AF1C89685600772BE1 /* DispatchSemaphoreControl.m */; };
+		849DD4B31C8968B200772BE1 /* NSConditionControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DD4B21C8968B200772BE1 /* NSConditionControl.m */; };
+		849DD4B61C89691B00772BE1 /* NSRecursiveLockControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DD4B51C89691B00772BE1 /* NSRecursiveLockControl.m */; };
+		849DD4B91C8969B000772BE1 /* POSIXControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DD4B81C8969B000772BE1 /* POSIXControl.m */; };
+		849DD4BC1C896A2400772BE1 /* OSSpinLockControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DD4BB1C896A2400772BE1 /* OSSpinLockControl.m */; };
+		849DD4BF1C896AAB00772BE1 /* dispatch_barrier_syncControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DD4BE1C896AAB00772BE1 /* dispatch_barrier_syncControl.m */; };
+		849DD4C21C896AC400772BE1 /* dispatch_barrier_asyncControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 849DD4C11C896AC400772BE1 /* dispatch_barrier_asyncControl.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		849DD4791C895CA800772BE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 849DD4571C895CA800772BE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 849DD45E1C895CA800772BE1;
+			remoteInfo = ThreadLockControlDemo;
+		};
+		849DD4841C895CA800772BE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 849DD4571C895CA800772BE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 849DD45E1C895CA800772BE1;
+			remoteInfo = ThreadLockControlDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		849DD45F1C895CA800772BE1 /* ThreadLockControlDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreadLockControlDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		849DD4631C895CA800772BE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		849DD4651C895CA800772BE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		849DD4661C895CA800772BE1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		849DD46C1C895CA800772BE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		849DD46E1C895CA800772BE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		849DD4711C895CA800772BE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		849DD4731C895CA800772BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849DD4781C895CA800772BE1 /* ThreadLockControlDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreadLockControlDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		849DD47C1C895CA800772BE1 /* ThreadLockControlDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadLockControlDemoTests.m; sourceTree = "<group>"; };
+		849DD47E1C895CA800772BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849DD4831C895CA800772BE1 /* ThreadLockControlDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThreadLockControlDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		849DD4871C895CA800772BE1 /* ThreadLockControlDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadLockControlDemoUITests.m; sourceTree = "<group>"; };
+		849DD4891C895CA800772BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849DD4951C895CD400772BE1 /* BaseControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseControl.h; sourceTree = "<group>"; };
+		849DD4961C895CD400772BE1 /* BaseControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseControl.m; sourceTree = "<group>"; };
+		849DD4981C895EA800772BE1 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		849DD4991C895EA800772BE1 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		849DD49B1C895F1300772BE1 /* RootTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableViewController.h; sourceTree = "<group>"; };
+		849DD49C1C895F1300772BE1 /* RootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewController.m; sourceTree = "<group>"; };
+		849DD49E1C895FD600772BE1 /* NSConditionLockControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSConditionLockControl.h; sourceTree = "<group>"; };
+		849DD49F1C895FD600772BE1 /* NSConditionLockControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSConditionLockControl.m; sourceTree = "<group>"; };
+		849DD4A11C89657700772BE1 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		849DD4A21C89657700772BE1 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		849DD4A51C89677400772BE1 /* atomicControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atomicControl.h; sourceTree = "<group>"; };
+		849DD4A61C89677400772BE1 /* atomicControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = atomicControl.m; sourceTree = "<group>"; };
+		849DD4A81C8967C700772BE1 /* NSLockControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLockControl.h; sourceTree = "<group>"; };
+		849DD4A91C8967C700772BE1 /* NSLockControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSLockControl.m; sourceTree = "<group>"; };
+		849DD4AB1C89681400772BE1 /* synchronizedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = synchronizedControl.h; sourceTree = "<group>"; };
+		849DD4AC1C89681400772BE1 /* synchronizedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = synchronizedControl.m; sourceTree = "<group>"; };
+		849DD4AE1C89685600772BE1 /* DispatchSemaphoreControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchSemaphoreControl.h; sourceTree = "<group>"; };
+		849DD4AF1C89685600772BE1 /* DispatchSemaphoreControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchSemaphoreControl.m; sourceTree = "<group>"; };
+		849DD4B11C8968B200772BE1 /* NSConditionControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSConditionControl.h; sourceTree = "<group>"; };
+		849DD4B21C8968B200772BE1 /* NSConditionControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSConditionControl.m; sourceTree = "<group>"; };
+		849DD4B41C89691B00772BE1 /* NSRecursiveLockControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRecursiveLockControl.h; sourceTree = "<group>"; };
+		849DD4B51C89691B00772BE1 /* NSRecursiveLockControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRecursiveLockControl.m; sourceTree = "<group>"; };
+		849DD4B71C8969B000772BE1 /* POSIXControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POSIXControl.h; sourceTree = "<group>"; };
+		849DD4B81C8969B000772BE1 /* POSIXControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POSIXControl.m; sourceTree = "<group>"; };
+		849DD4BA1C896A2400772BE1 /* OSSpinLockControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSpinLockControl.h; sourceTree = "<group>"; };
+		849DD4BB1C896A2400772BE1 /* OSSpinLockControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSpinLockControl.m; sourceTree = "<group>"; };
+		849DD4BD1C896AAB00772BE1 /* dispatch_barrier_syncControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dispatch_barrier_syncControl.h; sourceTree = "<group>"; };
+		849DD4BE1C896AAB00772BE1 /* dispatch_barrier_syncControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dispatch_barrier_syncControl.m; sourceTree = "<group>"; };
+		849DD4C01C896AC400772BE1 /* dispatch_barrier_asyncControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dispatch_barrier_asyncControl.h; sourceTree = "<group>"; };
+		849DD4C11C896AC400772BE1 /* dispatch_barrier_asyncControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dispatch_barrier_asyncControl.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		849DD45C1C895CA800772BE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849DD4751C895CA800772BE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849DD4801C895CA800772BE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		849DD4561C895CA800772BE1 = {
+			isa = PBXGroup;
+			children = (
+				849DD4611C895CA800772BE1 /* ThreadLockControlDemo */,
+				849DD47B1C895CA800772BE1 /* ThreadLockControlDemoTests */,
+				849DD4861C895CA800772BE1 /* ThreadLockControlDemoUITests */,
+				849DD4601C895CA800772BE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		849DD4601C895CA800772BE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				849DD45F1C895CA800772BE1 /* ThreadLockControlDemo.app */,
+				849DD4781C895CA800772BE1 /* ThreadLockControlDemoTests.xctest */,
+				849DD4831C895CA800772BE1 /* ThreadLockControlDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		849DD4611C895CA800772BE1 /* ThreadLockControlDemo */ = {
+			isa = PBXGroup;
+			children = (
+				849DD4651C895CA800772BE1 /* AppDelegate.h */,
+				849DD4661C895CA800772BE1 /* AppDelegate.m */,
+				849DD49B1C895F1300772BE1 /* RootTableViewController.h */,
+				849DD49C1C895F1300772BE1 /* RootTableViewController.m */,
+				849DD4981C895EA800772BE1 /* BaseViewController.h */,
+				849DD4991C895EA800772BE1 /* BaseViewController.m */,
+				849DD4A41C89657D00772BE1 /* Control */,
+				849DD46B1C895CA800772BE1 /* Main.storyboard */,
+				849DD46E1C895CA800772BE1 /* Assets.xcassets */,
+				849DD4701C895CA800772BE1 /* LaunchScreen.storyboard */,
+				849DD4731C895CA800772BE1 /* Info.plist */,
+				849DD4621C895CA800772BE1 /* Supporting Files */,
+				849DD4A11C89657700772BE1 /* TestViewController.h */,
+				849DD4A21C89657700772BE1 /* TestViewController.m */,
+			);
+			path = ThreadLockControlDemo;
+			sourceTree = "<group>";
+		};
+		849DD4621C895CA800772BE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				849DD4631C895CA800772BE1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		849DD47B1C895CA800772BE1 /* ThreadLockControlDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				849DD47C1C895CA800772BE1 /* ThreadLockControlDemoTests.m */,
+				849DD47E1C895CA800772BE1 /* Info.plist */,
+			);
+			path = ThreadLockControlDemoTests;
+			sourceTree = "<group>";
+		};
+		849DD4861C895CA800772BE1 /* ThreadLockControlDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				849DD4871C895CA800772BE1 /* ThreadLockControlDemoUITests.m */,
+				849DD4891C895CA800772BE1 /* Info.plist */,
+			);
+			path = ThreadLockControlDemoUITests;
+			sourceTree = "<group>";
+		};
+		849DD4A41C89657D00772BE1 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				849DD4951C895CD400772BE1 /* BaseControl.h */,
+				849DD4961C895CD400772BE1 /* BaseControl.m */,
+				849DD4A51C89677400772BE1 /* atomicControl.h */,
+				849DD4A61C89677400772BE1 /* atomicControl.m */,
+				849DD4A81C8967C700772BE1 /* NSLockControl.h */,
+				849DD4A91C8967C700772BE1 /* NSLockControl.m */,
+				849DD4AB1C89681400772BE1 /* synchronizedControl.h */,
+				849DD4AC1C89681400772BE1 /* synchronizedControl.m */,
+				849DD4AE1C89685600772BE1 /* DispatchSemaphoreControl.h */,
+				849DD4AF1C89685600772BE1 /* DispatchSemaphoreControl.m */,
+				849DD4B11C8968B200772BE1 /* NSConditionControl.h */,
+				849DD4B21C8968B200772BE1 /* NSConditionControl.m */,
+				849DD49E1C895FD600772BE1 /* NSConditionLockControl.h */,
+				849DD49F1C895FD600772BE1 /* NSConditionLockControl.m */,
+				849DD4B41C89691B00772BE1 /* NSRecursiveLockControl.h */,
+				849DD4B51C89691B00772BE1 /* NSRecursiveLockControl.m */,
+				849DD4B71C8969B000772BE1 /* POSIXControl.h */,
+				849DD4B81C8969B000772BE1 /* POSIXControl.m */,
+				849DD4BA1C896A2400772BE1 /* OSSpinLockControl.h */,
+				849DD4BB1C896A2400772BE1 /* OSSpinLockControl.m */,
+				849DD4C01C896AC400772BE1 /* dispatch_barrier_asyncControl.h */,
+				849DD4C11C896AC400772BE1 /* dispatch_barrier_asyncControl.m */,
+				849DD4BD1C896AAB00772BE1 /* dispatch_barrier_syncControl.h */,
+				849DD4BE1C896AAB00772BE1 /* dispatch_barrier_syncControl.m */,
+			);
+			name = Control;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		849DD45E1C895CA800772BE1 /* ThreadLockControlDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849DD48C1C895CA800772BE1 /* Build configuration list for PBXNativeTarget "ThreadLockControlDemo" */;
+			buildPhases = (
+				849DD45B1C895CA800772BE1 /* Sources */,
+				849DD45C1C895CA800772BE1 /* Frameworks */,
+				849DD45D1C895CA800772BE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThreadLockControlDemo;
+			productName = ThreadLockControlDemo;
+			productReference = 849DD45F1C895CA800772BE1 /* ThreadLockControlDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		849DD4771C895CA800772BE1 /* ThreadLockControlDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849DD48F1C895CA800772BE1 /* Build configuration list for PBXNativeTarget "ThreadLockControlDemoTests" */;
+			buildPhases = (
+				849DD4741C895CA800772BE1 /* Sources */,
+				849DD4751C895CA800772BE1 /* Frameworks */,
+				849DD4761C895CA800772BE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				849DD47A1C895CA800772BE1 /* PBXTargetDependency */,
+			);
+			name = ThreadLockControlDemoTests;
+			productName = ThreadLockControlDemoTests;
+			productReference = 849DD4781C895CA800772BE1 /* ThreadLockControlDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		849DD4821C895CA800772BE1 /* ThreadLockControlDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849DD4921C895CA800772BE1 /* Build configuration list for PBXNativeTarget "ThreadLockControlDemoUITests" */;
+			buildPhases = (
+				849DD47F1C895CA800772BE1 /* Sources */,
+				849DD4801C895CA800772BE1 /* Frameworks */,
+				849DD4811C895CA800772BE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				849DD4851C895CA800772BE1 /* PBXTargetDependency */,
+			);
+			name = ThreadLockControlDemoUITests;
+			productName = ThreadLockControlDemoUITests;
+			productReference = 849DD4831C895CA800772BE1 /* ThreadLockControlDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		849DD4571C895CA800772BE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Yasin;
+				TargetAttributes = {
+					849DD45E1C895CA800772BE1 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					849DD4771C895CA800772BE1 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 849DD45E1C895CA800772BE1;
+					};
+					849DD4821C895CA800772BE1 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 849DD45E1C895CA800772BE1;
+					};
+				};
+			};
+			buildConfigurationList = 849DD45A1C895CA800772BE1 /* Build configuration list for PBXProject "ThreadLockControlDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 849DD4561C895CA800772BE1;
+			productRefGroup = 849DD4601C895CA800772BE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				849DD45E1C895CA800772BE1 /* ThreadLockControlDemo */,
+				849DD4771C895CA800772BE1 /* ThreadLockControlDemoTests */,
+				849DD4821C895CA800772BE1 /* ThreadLockControlDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		849DD45D1C895CA800772BE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849DD4721C895CA800772BE1 /* LaunchScreen.storyboard in Resources */,
+				849DD46F1C895CA800772BE1 /* Assets.xcassets in Resources */,
+				849DD46D1C895CA800772BE1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849DD4761C895CA800772BE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849DD4811C895CA800772BE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		849DD45B1C895CA800772BE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849DD4A71C89677400772BE1 /* atomicControl.m in Sources */,
+				849DD4C21C896AC400772BE1 /* dispatch_barrier_asyncControl.m in Sources */,
+				849DD49D1C895F1300772BE1 /* RootTableViewController.m in Sources */,
+				849DD4971C895CD400772BE1 /* BaseControl.m in Sources */,
+				849DD4B91C8969B000772BE1 /* POSIXControl.m in Sources */,
+				849DD4AD1C89681400772BE1 /* synchronizedControl.m in Sources */,
+				849DD4B31C8968B200772BE1 /* NSConditionControl.m in Sources */,
+				849DD4A31C89657700772BE1 /* TestViewController.m in Sources */,
+				849DD49A1C895EA800772BE1 /* BaseViewController.m in Sources */,
+				849DD4B01C89685600772BE1 /* DispatchSemaphoreControl.m in Sources */,
+				849DD4671C895CA800772BE1 /* AppDelegate.m in Sources */,
+				849DD4B61C89691B00772BE1 /* NSRecursiveLockControl.m in Sources */,
+				849DD4641C895CA800772BE1 /* main.m in Sources */,
+				849DD4BF1C896AAB00772BE1 /* dispatch_barrier_syncControl.m in Sources */,
+				849DD4BC1C896A2400772BE1 /* OSSpinLockControl.m in Sources */,
+				849DD4AA1C8967C700772BE1 /* NSLockControl.m in Sources */,
+				849DD4A01C895FD600772BE1 /* NSConditionLockControl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849DD4741C895CA800772BE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849DD47D1C895CA800772BE1 /* ThreadLockControlDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849DD47F1C895CA800772BE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849DD4881C895CA800772BE1 /* ThreadLockControlDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		849DD47A1C895CA800772BE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 849DD45E1C895CA800772BE1 /* ThreadLockControlDemo */;
+			targetProxy = 849DD4791C895CA800772BE1 /* PBXContainerItemProxy */;
+		};
+		849DD4851C895CA800772BE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 849DD45E1C895CA800772BE1 /* ThreadLockControlDemo */;
+			targetProxy = 849DD4841C895CA800772BE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		849DD46B1C895CA800772BE1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				849DD46C1C895CA800772BE1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		849DD4701C895CA800772BE1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				849DD4711C895CA800772BE1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		849DD48A1C895CA800772BE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		849DD48B1C895CA800772BE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		849DD48D1C895CA800772BE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ThreadLockControlDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Yasin.ThreadLockControlDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		849DD48E1C895CA800772BE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ThreadLockControlDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Yasin.ThreadLockControlDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		849DD4901C895CA800772BE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ThreadLockControlDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Yasin.ThreadLockControlDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreadLockControlDemo.app/ThreadLockControlDemo";
+			};
+			name = Debug;
+		};
+		849DD4911C895CA800772BE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ThreadLockControlDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Yasin.ThreadLockControlDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThreadLockControlDemo.app/ThreadLockControlDemo";
+			};
+			name = Release;
+		};
+		849DD4931C895CA800772BE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ThreadLockControlDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Yasin.ThreadLockControlDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ThreadLockControlDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		849DD4941C895CA800772BE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ThreadLockControlDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Yasin.ThreadLockControlDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ThreadLockControlDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		849DD45A1C895CA800772BE1 /* Build configuration list for PBXProject "ThreadLockControlDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849DD48A1C895CA800772BE1 /* Debug */,
+				849DD48B1C895CA800772BE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		849DD48C1C895CA800772BE1 /* Build configuration list for PBXNativeTarget "ThreadLockControlDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849DD48D1C895CA800772BE1 /* Debug */,
+				849DD48E1C895CA800772BE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		849DD48F1C895CA800772BE1 /* Build configuration list for PBXNativeTarget "ThreadLockControlDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849DD4901C895CA800772BE1 /* Debug */,
+				849DD4911C895CA800772BE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		849DD4921C895CA800772BE1 /* Build configuration list for PBXNativeTarget "ThreadLockControlDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849DD4931C895CA800772BE1 /* Debug */,
+				849DD4941C895CA800772BE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 849DD4571C895CA800772BE1 /* Project object */;
+}
