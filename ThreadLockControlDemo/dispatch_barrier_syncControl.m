@@ -26,7 +26,7 @@
 
 - (void)getImageNameWithMultiThread{
     NSMutableArray *imageNames = [NSMutableArray new];
-    int count = 1024*11;
+    int count = 1024*10+100;
     for (int i=0; i<count; i++) {
         [imageNames addObject:[NSString stringWithFormat:@"%d",i]];
     }

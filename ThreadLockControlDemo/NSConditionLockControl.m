@@ -60,7 +60,7 @@
 //    dispatch_group_t dispatchGroup = dispatch_group_create();
 //    __block double then, now;
 //    then = CFAbsoluteTimeGetCurrent();
-//    for (int i=0; i<1024*11; i++) {
+//    for (int i=0; i<1024*10+100; i++) {
 //        dispatch_group_async(dispatchGroup, self.synchronizationQueue, ^(){
 //            [self getIamgeName:imageNames];
 //        });
