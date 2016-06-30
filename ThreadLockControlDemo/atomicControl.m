@@ -16,34 +16,39 @@
 @implementation atomicControl
 
 - (void)getIamgeName{
-    NSString *imageName;
-    if (self.imageNames.count>0) {
-        //原子属性的数据并不是线程安全的，这里会出现内存问题
-        imageName = [self.imageNames firstObject];
-        [self.imageNames removeObjectAtIndex:0];
+    while (true) {
+        NSString *imageName;
+        if (self.imageNames.count>0) {
+            //原子属性的数据并不是线程安全的，这里会出现内存问题
+            imageName = [self.imageNames firstObject];
+            [self.imageNames removeObjectAtIndex:0];
+        } else {
+            now = CFAbsoluteTimeGetCurrent();
+            printf("%30s_lock: %f sec-----imageNames count: %ld\n",[self.title UTF8String] , now-then,self.imageNames.count);
+            return;
+        }
     }
+    
     
 }
 
 - (void)getImageNameWithMultiThread{
+    
     self.imageNames = [NSMutableArray new];
     int count = 1024*10;
     for (int i=0; i<count; i++) {
         [self.imageNames addObject:[NSString stringWithFormat:@"%d",i]];
     }
-    dispatch_group_t dispatchGroup = dispatch_group_create();
-    __block double then, now;
+    printf("数组初始化话完成-----imageNames count: %ld\n",self.imageNames.count);
+    printf("开始删除数组\n");
     then = CFAbsoluteTimeGetCurrent();
-    for (int i=0; i<count+100; i++) {
-        //100来测试锁有没有正确的执行
-        dispatch_group_async(dispatchGroup, self.synchronizationQueue, ^(){
+    for (int i=0; i<3; i++) {
+        //创建三个异步线程，测试锁有没有正确的执行
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            // 耗时的操作
             [self getIamgeName];
         });
     }
-    dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), ^(){
-        now = CFAbsoluteTimeGetCurrent();
-        printf("%30s_lock: %f sec-----imageNames count: %ld\n",[self.title UTF8String] , now-then,self.imageNames.count);
-    });
     
 }
 @end

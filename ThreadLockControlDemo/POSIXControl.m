@@ -29,20 +29,28 @@
     }
     return self;
 }
-- (void)getIamgeName:(NSMutableArray *)imageNames{
-    NSString *imageName;
-    /**
-     *  加锁
-     */
-    pthread_mutex_lock(&mutex);
-    if (imageNames.count>0) {
-        imageName = [imageNames firstObject];
-        [imageNames removeObjectAtIndex:0];
+- (void)getIamgeName{
+    while (true) {
+        NSString *imageName;
+        /**
+         *  加锁
+         */
+        pthread_mutex_lock(&mutex);
+        if (imageNameArray.count>0) {
+            imageName = [imageNameArray firstObject];
+            [imageNameArray removeObjectAtIndex:0];
+        } else {
+            now = CFAbsoluteTimeGetCurrent();
+            printf("%30s_lock: %f sec-----imageNames count: %ld\n",[self.title UTF8String] , now-then,imageNameArray.count);
+            pthread_mutex_unlock(&mutex);
+            return;
+        }
+        /**
+         *  解锁
+         */
+        pthread_mutex_unlock(&mutex);
     }
-    /**
-     *  解锁
-     */
-    pthread_mutex_unlock(&mutex);
     
 }
+
 @end

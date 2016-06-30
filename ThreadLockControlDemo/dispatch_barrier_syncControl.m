@@ -13,29 +13,32 @@
 }
 @end
 @implementation dispatch_barrier_syncControl
-- (void)getIamgeName:(NSMutableArray *)imageNames{
-    NSString *imageName;
-    if (imageNames.count>0) {
-        imageName = [imageNames firstObject];
-        [imageNames removeObjectAtIndex:0];
-    }else{
-        now = CFAbsoluteTimeGetCurrent();
-        printf("%30s_lock: %f sec-----imageNames count: %ld\n",[self.title UTF8String] , now-then,imageNames.count);
+
+- (void)getIamgeName{
+    while (true) {
+        NSString *imageName;
+        if (imageNameArray.count>0) {
+            imageName = [imageNameArray firstObject];
+            [imageNameArray removeObjectAtIndex:0];
+        } else {
+            now = CFAbsoluteTimeGetCurrent();
+            printf("%30s_lock: %f sec-----imageNames count: %ld\n",[self.title UTF8String] , now-then,imageNameArray.count);
+            break;
+        }
     }
+    
 }
 
 - (void)getImageNameWithMultiThread{
-    NSMutableArray *imageNames = [NSMutableArray new];
-    int count = 1024*10+100;
-    for (int i=0; i<count; i++) {
-        [imageNames addObject:[NSString stringWithFormat:@"%d",i]];
-    }
+    printf("开始删除数组\n");
     then = CFAbsoluteTimeGetCurrent();
-    for (int i=0; i<count+1; i++) {
-        //100来测试锁有没有正确的执行
+    for (int i=0; i<3; i++) {
+        //创建三个异步线程，测试锁有没有正确的执行
         dispatch_barrier_sync(self.synchronizationQueue, ^{
-            [self getIamgeName:imageNames];
+            [self getIamgeName];
         });
     }
+    
 }
+
 @end

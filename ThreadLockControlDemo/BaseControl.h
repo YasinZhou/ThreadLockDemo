@@ -9,9 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @interface BaseControl : NSObject
-@property(nonatomic,strong)NSString *title;
+{
+    NSMutableArray *imageNameArray;
+    __block double then, now;
+}
+@property (nonatomic, strong) NSString *title;
 @property (nonatomic, readonly) dispatch_queue_t synchronizationQueue;
 #pragma mark - 多线程取出图片后删除
 - (void)getImageNameWithMultiThread;
-- (void)getIamgeName:(NSMutableArray *)imageNames;
+- (void)getIamgeName;
 @end

@@ -10,14 +10,20 @@
 
 @implementation synchronizedControl
 
-- (void)getIamgeName:(NSMutableArray *)imageNames{
-    NSString *imageName;
-    @synchronized(self) {
-        if (imageNames.count>0) {
-            imageName = [imageNames firstObject];
-            [imageNames removeObjectAtIndex:0];
+- (void)getIamgeName{
+    while (true) {
+        NSString *imageName;
+        @synchronized(self) {
+            if (imageNameArray.count>0) {
+                imageName = [imageNameArray firstObject];
+                [imageNameArray removeObjectAtIndex:0];
+            } else {
+                now = CFAbsoluteTimeGetCurrent();
+                printf("%30s_lock: %f sec-----imageNames count: %ld\n",[self.title UTF8String] , now-then,imageNameArray.count);
+                return;
+            }
         }
     }
+    
 }
-
 @end

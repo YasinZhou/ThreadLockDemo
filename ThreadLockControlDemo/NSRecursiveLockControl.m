@@ -33,23 +33,19 @@
     [lock unlock];
 }
 - (void)getImageNameWithMultiThread{
-    NSMutableArray *imageNames = [NSMutableArray new];
-    int count = 1024*10+100;
-    for (int i=0; i<count; i++) {
-        [imageNames addObject:[NSString stringWithFormat:@"%d",i]];
-    }
+
     dispatch_group_t dispatchGroup = dispatch_group_create();
-    __block double then, now;
+    printf("开始删除数组\n");
     then = CFAbsoluteTimeGetCurrent();
     
     //这里不需要for循环创建线程了
     dispatch_group_async(dispatchGroup, self.synchronizationQueue, ^(){
-        [self getIamgeName:imageNames];
+        [self getIamgeName:imageNameArray];
     });
     
     dispatch_group_notify(dispatchGroup, dispatch_get_main_queue(), ^(){
         now = CFAbsoluteTimeGetCurrent();
-        printf("%30s_lock: %f sec-----imageNames count: %ld\n",[self.title UTF8String] , now-then,imageNames.count);
+        printf("%30s_lock: %f sec-----imageNames count: %ld\n",[self.title UTF8String] , now-then,imageNameArray.count);
     });
 }
 @end
